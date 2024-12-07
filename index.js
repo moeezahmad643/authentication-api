@@ -120,7 +120,9 @@ app.delete("/users/:id", (req, res) => {
 
 // Default route
 app.get("/", (req, res) => {
-  res.send("Welcome to the Users API!.. You can see the details of this api on https://my-api.freesite.online/");
+  res.send(
+    "Welcome to the Users API!.. You can see the details of this api <a href='https://my-api.freesite.online/' > from here </a>"
+  );
 });
 
 // Start the server
